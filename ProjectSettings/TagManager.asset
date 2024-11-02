@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RemettreBoulePositionInitial
   - Pin
+  - ball
   layers:
   - Default
   - TransparentFX
