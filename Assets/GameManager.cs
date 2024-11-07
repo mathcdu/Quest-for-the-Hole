@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
     private int numeroTrouActuel = 0;
     public List<Transform> positionDebut;
     
     public Rigidbody ballRigidbody;
+
+    public int nombreCoup = 0;
+    private List<int> nombreCoupPrecedent = new List<int>();
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Keyboard.current.spaceKey.wasPressedThisFrame){
+            ProchainTrou();
+        }
     }
 
     public void ProchainTrou(){
@@ -33,6 +38,16 @@ public class GameManager : MonoBehaviour
              ballRigidbody.transform.position = positionDebut[numeroTrouActuel].position;
              ballRigidbody.velocity =  Vector3.zero;
              ballRigidbody.angularVelocity = Vector3.zero;
+        }
+        nombreCoupPrecedent.Add(nombreCoup);
+        nombreCoup = 0;
+        AfficherPointage();
+    }
+
+    public void AfficherPointage(){
+        for (int i = 0; i  < nombreCoupPrecedent.Count; i++)
+        {
+            
         }
     }
 }

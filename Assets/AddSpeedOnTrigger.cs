@@ -5,6 +5,7 @@ using UnityEngine;
 public class AddSpeedOnTrigger : MonoBehaviour
 {
     public string targetTag;
+    public GameManager gameManager;
     private Vector3 anciennePosition;
     private Vector3 velocity;
 
@@ -35,6 +36,8 @@ public class AddSpeedOnTrigger : MonoBehaviour
 
             Rigidbody rb = other.attachedRigidbody;
             rb.velocity = projectedVelocity;
+
+            gameManager.nombreCoup++;
         }
     }
 }
