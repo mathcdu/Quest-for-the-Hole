@@ -6,14 +6,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class BoutonPress : MonoBehaviour
 {
     public Transform visualTarget;
-    private Vector3 offset;
+    private Vector3 offset;  
+     private bool freeze = false;
     private Vector3 initialLocalPos;
     public float resetSpeed = 5;
     private Transform pokeAttachTransform;
     public Vector3 localAxis;
     public float followAngle = 45;
 
-    private bool freeze = false;
+ 
 
     private XRBaseInteractable interactable;
     private bool isFollowing = false;
