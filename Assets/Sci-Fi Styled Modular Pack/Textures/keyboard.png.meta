@@ -1,4 +1,7 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/models 3d/RetroWindowsGUI/Window_Header_Resizable.png.meta
+guid: 50546ef0fde91dc4db6835c40c945f6d
+========
 guid: 100fc9940c400c240b007aa43d269cc3
 AssetOrigin:
   serializedVersion: 1
@@ -7,6 +10,7 @@ AssetOrigin:
   packageVersion: 1.1
   assetPath: Assets/Sci-Fi Styled Modular Pack/Textures/keyboard.png
   uploadId: 276156
+>>>>>>>> main:Assets/Sci-Fi Styled Modular Pack/Textures/keyboard.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -111,6 +115,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
+<<<<<<<< HEAD:Assets/models 3d/RetroWindowsGUI/Window_Header_Resizable.png.meta
+========
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -124,6 +130,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
+>>>>>>>> main:Assets/Sci-Fi Styled Modular Pack/Textures/keyboard.png.meta
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind.meta
+guid: 11129f71b9c9b9d4d86d12e68798658c
+========
 guid: 1808adb664f0bfc418aa64779189844a
+>>>>>>>> main:Assets/Sci-Fi Styled Modular Pack.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

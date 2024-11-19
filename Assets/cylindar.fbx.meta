@@ -1,9 +1,22 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Models/Structure_Terrain_Art.fbx.meta
+guid: f7d8e2fdd6dc19842ab0b22e96a40a5e
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seamless_Terrain_01
+    second: {fileID: 2100000, guid: fbfd211db215e0a4bab17772c46974ad, type: 2}
+========
 guid: 4a190ef190b9fd34f886cad7781d7cb6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
+>>>>>>>> main:Assets/cylindar.fbx.meta
   materials:
     materialImportMode: 2
     materialName: 0
@@ -43,7 +56,10 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Models/Structure_Terrain_Art.fbx.meta
+========
     nodeNameCollisionStrategy: 1
+>>>>>>>> main:Assets/cylindar.fbx.meta
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -99,9 +115,19 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Models/Structure_Terrain_Art.fbx.meta
+========
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
+>>>>>>>> main:Assets/cylindar.fbx.meta
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 248899
+  packageName: Chromatic Chaos VHS Asset Pack
+  packageVersion: 1.0
+  assetPath: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Models/Structure_Terrain_Art.fbx
+  uploadId: 580480

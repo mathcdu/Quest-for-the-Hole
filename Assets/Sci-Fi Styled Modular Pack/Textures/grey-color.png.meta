@@ -1,4 +1,7 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/models 3d/RetroWindowsGUI/Window_Base.png.meta
+guid: bc2f9868127d0fc4e81daf3e26cb8d32
+========
 guid: 5293294e5c42df8419dcb5492d2d0744
 AssetOrigin:
   serializedVersion: 1
@@ -7,6 +10,7 @@ AssetOrigin:
   packageVersion: 1.1
   assetPath: Assets/Sci-Fi Styled Modular Pack/Textures/grey-color.png
   uploadId: 276156
+>>>>>>>> main:Assets/Sci-Fi Styled Modular Pack/Textures/grey-color.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

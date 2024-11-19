@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/models 3d.meta
+guid: 92fa6a2aff5a2124bae381a1fb17e500
+========
 guid: 409606be28ec64765a0f95b002549e74
+>>>>>>>> main:Assets/MASH Virtual.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
