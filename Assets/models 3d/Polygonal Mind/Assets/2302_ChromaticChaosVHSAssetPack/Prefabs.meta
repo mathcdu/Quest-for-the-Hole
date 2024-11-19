@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: dfe5484d136842a458753e354534a653
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs.meta
+guid: 772656548cf9d5c448c2c6d10a467839
+========
+guid: 27aa8ce25cb474e4bad26de4182cd0cf
+>>>>>>>> main:Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

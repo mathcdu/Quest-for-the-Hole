@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     
     public Rigidbody ballRigidbody;
 
+    public TMPro.TextMeshPro textScoreTm;
+
     public int nombreCoup = 0;
     private List<int> nombreCoupPrecedent = new List<int>();
     // Start is called before the first frame update
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour
         ballRigidbody.transform.position = positionDebut[numeroTrouActuel].position;
         ballRigidbody.velocity =  Vector3.zero;
         ballRigidbody.angularVelocity = Vector3.zero;
+        textScoreTm.text = "";
     }
 
     // Update is called once per frame
@@ -44,10 +47,15 @@ public class GameManager : MonoBehaviour
         AfficherPointage();
     }
 
-    public void AfficherPointage(){
+    public void AfficherPointage()
+    {
+
+        string textScore = "";
         for (int i = 0; i  < nombreCoupPrecedent.Count; i++)
         {
-            
+            textScore += "Trou" + (i + 1) + " - " + nombreCoupPrecedent[i];
         }
+            textScoreTm.text = textScore;
+
     }
 }

@@ -1,8 +1,13 @@
 fileFormatVersion: 2
-guid: 5740ad298dd3f90498a661cc347f9f54
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Materials.meta
+guid: e0113ef7799324a4f968c9c258b8c446
+========
+guid: cdd317393a892a442866c01c1e103e34
+>>>>>>>> main:Assets/Sci-Fi Styled Modular Pack/Materials.meta
 folderAsset: yes
+timeCreated: 1486719797
+licenseType: Store
 DefaultImporter:
-  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

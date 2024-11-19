@@ -1,5 +1,6 @@
 fileFormatVersion: 2
-guid: 79a15f64ab21b584d8a927b5184057c4
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Models/Structure_Terrain_Art.fbx.meta
+guid: ef5a514f001095d40aba8020add2b2db
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -9,6 +10,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Seamless_Terrain_01
     second: {fileID: 2100000, guid: fbfd211db215e0a4bab17772c46974ad, type: 2}
+========
+guid: 4a190ef190b9fd34f886cad7781d7cb6
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+>>>>>>>> main:Assets/cylindar.fbx.meta
   materials:
     materialImportMode: 2
     materialName: 0
@@ -19,9 +27,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -44,10 +51,15 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Models/Structure_Terrain_Art.fbx.meta
+========
+    nodeNameCollisionStrategy: 1
+>>>>>>>> main:Assets/cylindar.fbx.meta
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -59,6 +71,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -69,6 +82,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -101,6 +115,11 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Models/Structure_Terrain_Art.fbx.meta
+========
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+>>>>>>>> main:Assets/cylindar.fbx.meta
   additionalBone: 0
   userData: 
   assetBundleName: 

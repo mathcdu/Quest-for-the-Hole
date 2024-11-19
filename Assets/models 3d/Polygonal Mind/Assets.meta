@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 58efd885808d1ae4b8f0656a26dae52d
+<<<<<<<< HEAD:Assets/models 3d/Polygonal Mind/Assets.meta
+guid: b630260d1073d184b8759eff394214a9
+========
+guid: 4f235941aef834b4e84323991af97acd
+>>>>>>>> main:Assets/Standard Assets.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

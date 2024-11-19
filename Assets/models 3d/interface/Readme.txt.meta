@@ -1,6 +1,11 @@
 fileFormatVersion: 2
-guid: 0a6b0d016779a614a8404708bcb6481b
+<<<<<<<< HEAD:Assets/models 3d/interface/Readme.txt.meta
+guid: 35982ad37bf8fc74aabbaa8df2f754b2
 TextScriptImporter:
+========
+guid: 8413f409b24658d4f916856199379a7b
+PrefabImporter:
+>>>>>>>> main:Assets/Portal.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
