@@ -48,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SunMask:
-        m_Texture: {fileID: 2800000, guid: e35515429b080e64ca556493cecbc99a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6711f5a84855f85439991a69e4f8ee4c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -91,8 +91,8 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _FogContrast: 30
-    - _FogHeight: 1
-    - _FogPower: 1
+    - _FogHeight: 0.5
+    - _FogPower: 0.5
     - _HorizonHeight: 0.43
     - _HorizonStrength: 1
     - _LinesMaskPower: 50
@@ -105,7 +105,7 @@ Material:
     - _RenderQueueType: 1
     - _SrcBlend: 1
     - _StarDensity: 15
-    - _StarSize: 100
+    - _StarSize: 47.2
     - _StencilRef: 0
     - _StencilRefDepth: 0
     - _StencilRefDistortionVec: 4
