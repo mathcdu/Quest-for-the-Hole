@@ -29,6 +29,16 @@ public class GameManager : MonoBehaviour
             ProchainTrou();
         }
     }
+    public int ObtenirNumeroTrouActuel()
+    {
+        return numeroTrouActuel;
+    }
+
+    public Vector3 ObtenirPositionDebutTrouActuel()
+    {
+        return positionDebut[numeroTrouActuel].position;
+    }
+
 
     public void ProchainTrou(){
         numeroTrouActuel = numeroTrouActuel +1;

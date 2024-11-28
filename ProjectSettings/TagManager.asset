@@ -9,6 +9,8 @@ TagManager:
   - ball
   - windArea
   - SpeedBoost
+  - Ground
+  - Trou1
   layers:
   - Default
   - TransparentFX
