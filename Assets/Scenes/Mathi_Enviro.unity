@@ -503,7 +503,6 @@ GameObject:
   m_Component:
   - component: {fileID: 30349874}
   - component: {fileID: 30349877}
-  - component: {fileID: 30349876}
   - component: {fileID: 30349875}
   m_Layer: 0
   m_Name: coll
@@ -541,27 +540,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: ball
   gameManager: {fileID: 695972668}
---- !u!65 &30349876
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30349873}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.2070866, z: 1.0416919}
-  m_Center: {x: -0, y: -0.10354296, z: -0.020846328}
 --- !u!65 &30349877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -581,8 +559,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.2078259, z: 1.0411761}
-  m_Center: {x: -0, y: -0.10391271, z: -0.020588834}
+  m_Size: {x: 0.9512447, y: 1.2078259, z: 1.0411761}
+  m_Center: {x: -0.051379155, y: -0.10391271, z: -0.020588834}
 --- !u!1001 &35804384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7091,7 +7069,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &813278855
