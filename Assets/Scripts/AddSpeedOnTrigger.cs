@@ -1,26 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AddSpeedOnTrigger : MonoBehaviour
 {
     public string targetTag;
     public GameManager gameManager;
-    private Vector3 anciennePosition;
-    private Vector3 velocity;
 
+    private Vector3 previousPosition;
+    private Vector3 velocity;
     private Collider clubCollider;
 
     void Start()
     {
-        anciennePosition = transform.position;
+        previousPosition = transform.position;
         clubCollider = GetComponent<Collider>();
+
+        Rigidbody rb = transform.parent.GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            rb = transform.parent.gameObject.AddComponent<Rigidbody>();
+            rb.isKinematic = true;
+        }
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
     }
 
     void FixedUpdate()
     {
-        velocity = (transform.position - anciennePosition) / Time.fixedDeltaTime;
-        anciennePosition = transform.position;
+        velocity = (transform.position - previousPosition) / Time.fixedDeltaTime;
+        previousPosition = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,27 +34,34 @@ public class AddSpeedOnTrigger : MonoBehaviour
         if (other.CompareTag(targetTag))
         {
             Rigidbody rb = other.attachedRigidbody;
-            rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+            if (rb == null) return;
 
-            Vector3 collisionPosition = clubCollider.ClosestPoint(other.transform.position);
-            Vector3 collisionNormal = other.transform.position - collisionPosition;
-
-            Vector3 projectedVelocity = Vector3.Project(velocity, collisionNormal);
-            
             Vector3 direction;
             float distance;
-            if (Physics.ComputePenetration(
-                    clubCollider, clubCollider.transform.position, clubCollider.transform.rotation,
-                    other, other.transform.position, other.transform.rotation,
-                    out direction, out distance))
+
+            if (Physics.ComputePenetration(clubCollider, clubCollider.transform.position, clubCollider.transform.rotation, 
+                                           other, other.transform.position, other.transform.rotation, 
+                                           out direction, out distance))
             {
-                // Resolve penetration by moving the ball out of the club
-                other.transform.position += direction * distance;
+                rb.position += direction * distance;
             }
 
-            rb.velocity = projectedVelocity;
+            Vector3 collisionPosition = clubCollider.ClosestPoint(other.transform.position);
+            Vector3 collisionNormal = (other.transform.position - collisionPosition).normalized;
 
-            gameManager.nombreCoup++;
+            Vector3 relativeVelocity = velocity - rb.velocity;
+
+            float angleFactor = Mathf.Max(0, Vector3.Dot(relativeVelocity.normalized, collisionNormal));
+            float forceMagnitude = relativeVelocity.magnitude * angleFactor * 1.5f;
+
+
+            if (forceMagnitude > 1.0f)
+            {
+                Vector3 force = collisionNormal * forceMagnitude;
+                rb.AddForce(force, ForceMode.Impulse);
+
+                gameManager.nombreCoup++;
+            }
         }
     }
 }

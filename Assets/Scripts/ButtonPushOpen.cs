@@ -1,27 +1,48 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
-public class ButtonPushOpen : MonoBehaviour
+public class ButtonPressOpen : MonoBehaviour
 {
+    public Transform visualTarget;
     public Animator animator;
     public string boolName = "open";
-    // Start is called before the first frame update
+    public string ballTag = "ball";
+
+    private Vector3 initialLocalPos;
+    public float resetSpeed = 5;
+    private bool freeze = false;
+
     void Start()
     {
-        GetComponent<XRSimpleInteractable>().selectEntered.AddListener(x => ToggleDoorOpen());
+        initialLocalPos = visualTarget.localPosition;
+
+        Collider buttonCollider = GetComponent<Collider>();
+        if (buttonCollider == null)
+        {
+            gameObject.AddComponent<BoxCollider>();
+        }
     }
 
-    public void ToggleDoorOpen(){
+    void FixedUpdate()
+    {
+        if (freeze)
+            return;
+
+        visualTarget.localPosition = Vector3.Lerp(visualTarget.localPosition, initialLocalPos, Time.deltaTime * resetSpeed);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(ballTag))
+        {
+            ToggleDoorOpen();
+        }
+    }
+
+    public void ToggleDoorOpen()
+    {
         bool isOpen = animator.GetBool(boolName);
         animator.SetBool(boolName, !isOpen);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
