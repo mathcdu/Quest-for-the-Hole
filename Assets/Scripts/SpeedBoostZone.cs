@@ -4,24 +4,18 @@ using UnityEngine;
 
 public class SpeedBoostZone : MonoBehaviour
 {
-
     public float boostForce = 20f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-    private void OnTriggerEnter(Collider other){
         Rigidbody ballRigidBody = other.GetComponent<Rigidbody>();
-        if(ballRigidBody != null)
+        if (ballRigidBody != null)
         {
-            ballRigidBody.AddForce(transform.forward * boostForce, ForceMode.Impulse);
+            Vector3 direction = other.transform.position - transform.position;
+            direction.Normalize();
+
+
+            ballRigidBody.AddForce(direction * boostForce, ForceMode.Impulse);
         }
     }
 }
