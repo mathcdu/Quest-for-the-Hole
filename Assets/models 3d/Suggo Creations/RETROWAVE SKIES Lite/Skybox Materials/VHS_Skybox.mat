@@ -54,7 +54,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SunMask:
-        m_Texture: {fileID: 2800000, guid: 6711f5a84855f85439991a69e4f8ee4c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6c43c9f1baf912940be2ba85c0c182d9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -77,7 +77,7 @@ Material:
     - BOOLEAN_GLITCHYMOON: 1
     - BOOLEAN_PREVENTSTARS: 1
     - Vector1_7d421ef4d57f45e586330be25bfb5941: 13.55
-    - Vector1_a770b768a8ca40a9b814a01444e6b850: 2.31
+    - Vector1_a770b768a8ca40a9b814a01444e6b850: 3.1
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
@@ -97,7 +97,7 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _FogContrast: 30
-    - _FogHeight: 1
+    - _FogHeight: 0.4
     - _FogPower: 1
     - _HorizonHeight: 0.61
     - _HorizonStrength: 1
@@ -124,7 +124,7 @@ Material:
     - _StencilWriteMaskMV: 40
     - _SunMaskSize: -0.67
     - _SunMaskSpherize: 0
-    - _SunSize: 0.55
+    - _SunSize: 0.733
     - _SurfaceType: 0
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
