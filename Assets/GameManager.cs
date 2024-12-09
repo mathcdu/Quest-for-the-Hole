@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         ResetBallAndPlayer();
         textScoreTm.text = "";
+        
     }
 
     void Update()
@@ -51,7 +53,6 @@ public class GameManager : MonoBehaviour
         if (numeroTrouActuel >= positionDebut.Count)
         {
             Debug.Log("Fin");
-            AfficherScoreDevantJoueur();
         }
         else
         {
@@ -93,14 +94,21 @@ public class GameManager : MonoBehaviour
         textScoreTm.text = textScore;
     }
 
-    private void AfficherScoreDevantJoueur()
+    // Nouvelle méthode pour détecter la collision avec l'objet fin
+public void FinDuJeu()
+{
+    Debug.Log("Chargement de la scène Résultats...");
+
+    // Save the score data in PlayerPrefs
+    string scoreText = "";
+    for (int i = 0; i < nombreCoupPrecedent.Count; i++)
     {
-        if (xrOrigin != null && textScoreTm != null)
-        {
-            Vector3 scorePosition = xrOrigin.position + xrOrigin.forward * distanceScoreJoueur;
-            textScoreTm.transform.position = scorePosition;
-            textScoreTm.transform.LookAt(xrOrigin);
-            textScoreTm.transform.Rotate(0, 180, 0);
-        }
+        scoreText += "Trou" + (i + 1) + " - " + nombreCoupPrecedent[i] + "\n";
     }
+    PlayerPrefs.SetString("scoreText", scoreText);
+    PlayerPrefs.Save();
+
+    // Load the Results scene
+    SceneManager.LoadScene("Résultat");
+}
 }

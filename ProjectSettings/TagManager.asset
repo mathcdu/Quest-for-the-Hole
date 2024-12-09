@@ -11,6 +11,9 @@ TagManager:
   - SpeedBoost
   - Ground
   - Trou1
+  - Fin
+  - Tombe
+  - joueur
   layers:
   - Default
   - TransparentFX

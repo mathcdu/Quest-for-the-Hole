@@ -11,11 +11,19 @@ public class SpeedBoostZone : MonoBehaviour
         Rigidbody ballRigidBody = other.GetComponent<Rigidbody>();
         if (ballRigidBody != null)
         {
-            Vector3 direction = other.transform.position - transform.position;
-            direction.Normalize();
+            // Utiliser la direction de mouvement actuelle de la balle
+            Vector3 direction = ballRigidBody.velocity.normalized;
 
-
-            ballRigidBody.AddForce(direction * boostForce, ForceMode.Impulse);
+            if (direction != Vector3.zero)
+            {
+                // Appliquer la force dans la direction de mouvement
+                ballRigidBody.AddForce(direction * boostForce, ForceMode.Impulse);
+            }
+            else
+            {
+                // Si la balle est immobile, on applique une force par défaut (facultatif)
+                Debug.LogWarning("La balle est immobile, pas de boost appliqué.");
+            }
         }
     }
 }
