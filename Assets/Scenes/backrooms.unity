@@ -10580,6 +10580,7 @@ MonoBehaviour:
   ball: {fileID: 306181688}
   destination: {fileID: 1548334718}
   ballg: {fileID: 306181681}
+  teleportSound: {fileID: 8300000, guid: 5d89b44e57d54a2478c2f87ed148c023, type: 3}
 --- !u!65 &1578748179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14648,6 +14649,7 @@ MonoBehaviour:
   ball: {fileID: 306181688}
   destination: {fileID: 1012975564}
   ballg: {fileID: 306181681}
+  teleportSound: {fileID: 8300000, guid: 5d89b44e57d54a2478c2f87ed148c023, type: 3}
 --- !u!65 &2104875617
 BoxCollider:
   m_ObjectHideFlags: 0
