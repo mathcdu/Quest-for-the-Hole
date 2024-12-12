@@ -6,10 +6,13 @@ public class prochainTrou : MonoBehaviour
 {
     public GameManager manageJeu;
     public string tag = "ball";
+    public AudioClip trouSound;
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +23,7 @@ public class prochainTrou : MonoBehaviour
     private void OnTriggerEnter(Collider other){
         if(other.CompareTag(tag)){
             manageJeu.ProchainTrou();
+            audioSource.PlayOneShot(trouSound);
         }
     }
 }
